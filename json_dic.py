@@ -1,14 +1,13 @@
 # -----------------------------------------------------------------------------
-# calc.py
+# json_dic.py
 #
-# A simple calculator with variables -- all in one file.
+# A simple json to python dictionary converter -- all in one file.
 # -----------------------------------------------------------------------------
 import sys
 import json
 tokens = (
     'LCURLYBRACKET','NUMBER','FLOAT', 'ID', 'COMMA', 'SEPA',
-    'RCURLYBRACKET','LBRACKET','RBRACKET',
-    'LPAREN','RPAREN', 'TRUE', 'FALSE', 'NULL'
+    'RCURLYBRACKET','LBRACKET','RBRACKET', 'TRUE', 'FALSE', 'NULL'
     )
 
 # Tokens
@@ -16,8 +15,7 @@ t_LCURLYBRACKET = r'\{'
 t_RCURLYBRACKET = r'\}'
 t_LBRACKET = r'\['
 t_RBRACKET = r'\]'
-t_LPAREN  = r'\('
-t_RPAREN  = r'\)'
+
 t_COMMA = r'\,'
 t_SEPA = r':'
 
